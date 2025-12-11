@@ -39,7 +39,7 @@ body {
 /* Background image for entire site */
 body {
   background-image: url("pj_images/pj_background_OPTIMIZED.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
