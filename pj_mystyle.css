@@ -956,3 +956,38 @@ body::before {
   z-index: -1;
   pointer-events: none;
 }
+/* ————— GLOBAL BACKGROUND IMAGE FIX ————— */
+
+/* Make sure the root covers the whole viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a fixed, full page background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  /* 🎨 Change the path & filename to match your image exactly */
+  background-image: url("../images/background.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  opacity: 0.5; /* 50% opacity for background only */
+  z-index: -1;  /* Keep it behind all content */
+  pointer-events: none; /* Don’t block clicks */
+}
+
+/* Optional: add a solid fallback color behind the image */
+body {
+  background-color: #ffffff;
+}
