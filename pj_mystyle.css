@@ -936,4 +936,11 @@ body {
   background-position: center;
   background-size: cover;
 }
+/* ===== EMERGENCY BACKGROUND RESTORE ===== */
+body {
+  background-image: url("./pj_images/pj_background_OPTIMIZED.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
 
