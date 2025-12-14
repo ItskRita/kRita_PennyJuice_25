@@ -925,3 +925,34 @@ nav li a {
     font-size: 1.2rem;
   }
 }
+/* GLOBAL BACKGROUND IMAGE OVERRIDE */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("../images/YOUR-IMAGE-NAME.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  /* opacity control WITHOUT affecting content */
+  position: relative;
+  z-index: 0;
+}
+
+/* overlay for 50% opacity */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../images/YOUR-IMAGE-NAME.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+  pointer-events: none;
+}
