@@ -930,3 +930,10 @@ body {
   background-color: rgba(255, 250, 244, 0.5);
   background-blend-mode: overlay;
 }
+body {
+  background-image: url("./pj_images/pj_background_OPTIMIZED.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
